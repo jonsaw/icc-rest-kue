@@ -1,0 +1,11 @@
+# Ignore all logfiles and tempfiles.
+/log/*.log
+*.log
+/tmp
+.DS_Store
+
+# Ignore config.json file
+config.json
+
+# Ignore node_modules
+node_modules/

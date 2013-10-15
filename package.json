@@ -1,0 +1,24 @@
+{
+  "name": "icc-rest-kue",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.coffee",
+    "devserver": "./node_modules/node-dev/bin/node-dev app.coffee"
+  },
+  "dependencies": {
+    "kue": "~0.6.2",
+    "coffee-script": "~1.6.3",
+    "express": "~3.4.0",
+    "request": "~2.27.0",
+    "mongoose": "~3.6.20",
+    "rebuild": "~0.1.2",
+    "node-gyp": "~0.10.10",
+    "csv": "~0.3.6",
+    "reds": "~0.2.4",
+    "redis": "~0.8.6"
+  },
+  "devDependencies": {
+    "node-dev": "~2.0.2"
+  }
+}
