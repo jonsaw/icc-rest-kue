@@ -8,6 +8,7 @@ routes = require './routes/index'
 csv = require 'csv'
 fs = require 'fs'
 Utils = require './utils'
+config = require './config'
 
 # Start a query batch request
 kue.app.post "/query/batch/:type", express.bodyParser(), (req, res) ->
@@ -112,4 +113,4 @@ kue.app.get '/csv', routes.csvList
 kue.app.get '/csv/download', routes.csvDownload
 
 kue.app.set "title", "ICC Kue"
-kue.app.listen 3000
+kue.app.listen config.app.port
