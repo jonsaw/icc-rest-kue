@@ -113,4 +113,4 @@ kue.app.get '/csv', routes.csvList
 kue.app.get '/csv/download', routes.csvDownload
 
 kue.app.set "title", "ICC Kue"
-kue.app.listen config.app.port
+kue.app.listen(process.env.PORT or config.app.port)
