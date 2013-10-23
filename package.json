@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.coffee",
-    "devserver": "./node_modules/node-dev/bin/node-dev app.coffee"
+    "devserver": "./node_modules/node-dev/bin/node-dev server.js"
   },
   "dependencies": {
     "kue": "~0.6.2",
