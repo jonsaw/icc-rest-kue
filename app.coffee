@@ -97,10 +97,9 @@ jobs.process "apt-generateAmazonReplenish", (job, done) ->
               rows.push row
           else
             rows.push [d.id, d.asin, d.title, d.count]
-
         csv()
           .from.array(rows)
-          .to.path(wipFile, {flags: 'a'})
+          .to.path(wipFile, {flags: 'a', eof: '\n'})
           .on 'close', ->
             next(i + chunk, job, callback)
           
